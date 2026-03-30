@@ -1,3 +1,5 @@
+이 글은 진짜가 아닙니다. 임의로 만들어본 샘플입니다.
+
 # 🌌 OmniFlow: Autonomous Multi-Agent Orchestration Platform
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
