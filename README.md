@@ -1,73 +1,67 @@
 <div align="center">
 
-<img src="https://via.placeholder.com/1280x500/0F172A/60A5FA?text=TaskFlow&font=Inter" alt="TaskFlow Banner" width="100%" />
+![TaskFlow Banner](https://via.placeholder.com/1280x420/111827/60A5FA?text=TASKFLOW%20-%20Modern%20Productivity%20Platform)
 
 # TaskFlow
 
-**팀과 개인의 생산성을 극대화하는 현대적인 업무 관리 플랫폼**
+**실시간 협업이 가능한 차세대 업무·태스크 관리 플랫폼**
 
-실시간 협업, 직관적인 UI, 강력한 자동화까지.  
-개발자, 디자이너, PM 모두가 사랑하는 **차세대 태스크 매니저**.
+개발자, 디자이너, PM이 함께 쓰는 직관적이고 강력한 생산성 도구.  
+Linear + Notion + ClickUp의 장점만 모았습니다.
 
-![GitHub stars](https://img.shields.io/github/stars/taeyang-dev/taskflow?style=for-the-badge&logo=github&color=0ea5e9)
-![GitHub forks](https://img.shields.io/github/forks/taeyang-dev/taskflow?style=for-the-badge&logo=github)
+![Stars](https://img.shields.io/github/stars/taeyang-dev/taskflow?style=for-the-badge&color=0ea5e9)
+![Forks](https://img.shields.io/github/forks/taeyang-dev/taskflow?style=for-the-badge)
 ![License](https://img.shields.io/github/license/taeyang-dev/taskflow?style=for-the-badge)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Tailwind](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 
 </div>
 
 <br>
 
-## ✨ 주요 기능
+## ✨ 주요 특징
 
-- **실시간 협업** — 여러 명이 동시에 같은 보드를 편집
-- **AI 스마트 어시스턴트** — 작업 자동 분류, 마감일 예측, 요약 생성
-- **Kanban + List + Timeline + Calendar** — 4가지 뷰 완벽 지원
-- **강력한 자동화** — If-Then 규칙 기반 워크플로우
-- **통합** — Slack, Notion, GitHub, Google Calendar 연동
-- **모바일 완벽 지원** — PWA + 네이티브 앱 느낌
+- ⚡ **실시간 협업** — 여러 사람이 동시에 작업 가능 (Pusher 기반)
+- 🤖 **AI 어시스턴트** — 작업 자동 분류, 우선순위 제안, 요약 생성 (GPT-4o)
+- 📋 **다양한 뷰** — Kanban, List, Timeline, Calendar, Table
+- 🔄 **강력한 자동화** — If-Then 규칙으로 반복 업무 자동화
+- 🔗 **외부 연동** — Slack, GitHub, Google Calendar, Notion
+- 📱 **완벽한 반응형** — PWA 지원으로 모바일에서도 네이티브급 경험
 
-## 📸 스크린샷
+## 📸 실제 화면
 
 <div align="center">
-  <img src="https://via.placeholder.com/800x480/1E2937/60A5FA?text=Dashboard+Preview" width="49%" alt="Dashboard" />
-  <img src="https://via.placeholder.com/800x480/1E2937/60A5FA?text=Kanban+Board" width="49%" alt="Kanban" />
-  <img src="https://via.placeholder.com/800x480/1E2937/60A5FA?text=AI+Assistant" width="49%" alt="AI Assistant" />
-  <img src="https://via.placeholder.com/800x480/1E2937/60A5FA?text=Timeline+View" width="49%" alt="Timeline" />
+  <img src="https://picsum.photos/id/1015/800/450" width="49%" alt="Dashboard" />
+  <img src="https://picsum.photos/id/106/800/450" width="49%" alt="Kanban Board" />
+  <img src="https://picsum.photos/id/201/800/450" width="49%" alt="AI Assistant" />
+  <img src="https://picsum.photos/id/237/800/450" width="49%" alt="Timeline View" />
 </div>
 
 <br>
 
 ## 🛠 기술 스택
 
-| Layer           | Technology                              |
-|----------------|-----------------------------------------|
-| **Frontend**   | Next.js 15 (App Router), TypeScript, Tailwind CSS, shadcn/ui, Zustand, TanStack Query |
-| **Backend**    | Next.js API Routes + tRPC               |
-| **Database**   | PostgreSQL + Prisma ORM                 |
-| **Auth**       | NextAuth.js (OAuth + Credentials)       |
-| **AI**         | OpenAI GPT-4o + LangChain               |
-| **Real-time**  | Pusher / Socket.io                      |
-| **Deployment** | Vercel + Neon Postgres                  |
-| **CI/CD**      | GitHub Actions                          |
+**Frontend**: Next.js 15 (App Router) · TypeScript · Tailwind CSS · shadcn/ui · TanStack Query · Zustand  
+**Backend**: tRPC · Next.js API Routes  
+**Database**: PostgreSQL · Prisma ORM  
+**AI**: OpenAI GPT-4o + LangChain  
+**Real-time**: Pusher  
+**배포**: Vercel + Neon Serverless Postgres
 
 ## 🚀 빠른 시작
 
 ```bash
-# 1. 저장소 클론
 git clone https://github.com/taeyang-dev/taskflow.git
 cd taskflow
 
-# 2. 의존성 설치
 pnpm install
 
-# 3. 환경 변수 설정
+# 환경변수 복사
 cp .env.example .env.local
 
-# 4. 데이터베이스 마이그레이션
+# DB 마이그레이션
 pnpm prisma migrate dev
 
-# 5. 개발 서버 실행
+# 개발 서버 실행
 pnpm dev
