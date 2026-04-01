@@ -188,7 +188,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ### 🌟 Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=songtaeyang/omniflow&type=Date)](https://star-history.com/#songtaeyang/omniflow&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=taeyangsong/omniflow&type=Date)](https://star-history.com/#taeyangsong/omniflow&Date)
 
 ---
 
