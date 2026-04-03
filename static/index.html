@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Priority Guard</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Priority Guard</h1>
+      <span id="today-date"></span>
+    </header>
+
+    <!-- 할일 추가 -->
+    <section class="card">
+      <h2>오늘 할일 추가</h2>
+      <div class="add-form">
+        <input type="text" id="new-title" placeholder="할일 입력..." />
+        <input type="number" id="new-priority" placeholder="순위" min="1" max="99" style="width:70px" />
+        <button onclick="addTask()">추가</button>
+      </div>
+    </section>
+
+    <!-- 오늘 할일 목록 -->
+    <section class="card">
+      <h2>오늘의 할일 <span id="task-count"></span></h2>
+      <ul id="task-list"></ul>
+    </section>
+
+    <!-- 새 요청 판단 -->
+    <section class="card">
+      <h2>새 요청 판단 <span class="badge ai">AI</span></h2>
+      <div class="add-form">
+        <input type="text" id="new-request" placeholder="갑자기 들어온 요청 입력..." />
+        <button onclick="evaluateRequest()">판단 요청</button>
+      </div>
+      <div id="eval-result" class="eval-box hidden"></div>
+    </section>
+
+    <!-- 하루 요약 -->
+    <section class="card">
+      <h2>오늘 하루 요약 <span class="badge ai">AI</span></h2>
+      <button onclick="getSummary()">요약 보기</button>
+      <div id="summary-result" class="summary-box hidden"></div>
+    </section>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
