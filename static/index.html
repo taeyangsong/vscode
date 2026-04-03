@@ -9,16 +9,25 @@
 <body>
   <div class="container">
     <header>
-      <h1>Priority Guard</h1>
-      <span id="today-date"></span>
+      <div>
+        <h1>Priority Guard</h1>
+        <span id="today-date"></span>
+      </div>
+      <button class="btn-carry" onclick="carryOver()" title="어제 미완료 가져오기">어제 미완료 가져오기</button>
     </header>
+
+    <!-- 주간 통계 -->
+    <section class="card stats-card">
+      <h2>이번 주 완료율</h2>
+      <div id="stats-bar" class="stats-bar"></div>
+    </section>
 
     <!-- 할일 추가 -->
     <section class="card">
       <h2>오늘 할일 추가</h2>
       <div class="add-form">
         <input type="text" id="new-title" placeholder="할일 입력..." />
-        <input type="number" id="new-priority" placeholder="순위" min="1" max="99" style="width:70px" />
+        <input type="number" id="new-priority" placeholder="순위" min="1" max="99" />
         <button onclick="addTask()">추가</button>
       </div>
     </section>
@@ -27,6 +36,7 @@
     <section class="card">
       <h2>오늘의 할일 <span id="task-count"></span></h2>
       <ul id="task-list"></ul>
+      <p id="empty-msg" class="empty-msg hidden">할일을 추가해보세요.</p>
     </section>
 
     <!-- 새 요청 판단 -->
